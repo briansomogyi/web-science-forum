@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Forum Layout</title>
+  <style>
+    .dropdown-content {
+      display: none;
+    }
+
+    .dropdown-content.show {
+      display: block;
+    }
+  </style>
+  <script type="module" src="./main.js"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+      <div class="text-xl font-bold hidden lg:block">Web Science Forum</div>
+      <nav class="flex flex-wrap items-center w-full lg:w-auto">
+        <div class="flex w-full sm:hidden items-center">
+          <button id="left-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+          <input type="text" placeholder="Search..." class="border p-2 rounded flex-grow mx-2">
+          <button id="right-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+        </div>
+        <div id="left-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-house"></i> Home</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-newspaper"></i> News Feed</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-question-circle"></i> Answer</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-people"></i> Spaces</a>
+        </div>
+        <div id="right-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-info-circle"></i> About</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-person"></i> Account</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-envelope"></i> Contact</a>
+          <a href="#" class="block text-blue-500 mb-2"><i class="bi bi-question-square"></i> Ask a question</a>
+        </div>
+        <div class="hidden sm:flex space-x-4">
+          <a href="#" class="text-blue-500"><i class="bi bi-house"></i> Home</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-newspaper"></i> News Feed</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-question-circle"></i> Answer</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-people"></i> Spaces</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-info-circle"></i> About</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-person"></i> Account</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-envelope"></i> Contact</a>
+          <a href="#" class="text-blue-500"><i class="bi bi-question-square"></i> Ask a question</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-1/4 bg-white shadow p-4 mb-4 md:mb-0">
+      <h2 class="font-bold mb-4">Add a space</h2>
+      <ul>
+        <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-plus-circle"></i> Item One</a></li>
+        <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-plus-circle"></i> Item Two</a></li>
+        <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-plus-circle"></i> Item Three</a></li>
+      </ul>
+    </aside>
+
+    <!-- Posts -->
+    <main class="w-full md:w-3/4 md:ml-4">
+      <div class="bg-white shadow p-4 mb-4">
+        <h2 class="font-bold mb-2"><i class="bi bi-person-circle"></i> John Doe</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+      </div>
+      <div class="bg-white shadow p-4">
+        <h2 class="font-bold mb-2"><i class="bi bi-person-circle"></i> Jane Doe</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('left-hamburger').addEventListener('click', function () {
+      document.getElementById('left-dropdown').classList.toggle('show');
+    });
+    document.getElementById('right-hamburger').addEventListener('click', function () {
+      document.getElementById('right-dropdown').classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>
