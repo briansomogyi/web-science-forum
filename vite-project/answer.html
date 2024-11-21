@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Page</title>
+    <script type="module" src="./main.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+            <div class="text-xl font-bold hidden lg:block">Web Science Forum</div>
+            <nav class="flex flex-wrap items-center w-full lg:w-auto">
+                <div class="flex w-full sm:hidden items-center">
+                    <button id="left-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+                    <input type="text" placeholder="Search..." class="border p-2 rounded flex-grow mx-2">
+                    <button id="right-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+                </div>
+                <div id="left-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-house"></i> Home</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-newspaper"></i> News
+                        Feed</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-question-circle"></i>
+                        Answer</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-people"></i> Spaces</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-house"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-newspaper"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-question-circle"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-people"></i></a>
+                </div>
+                <div id="right-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-info-circle"></i> About</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-person"></i> Account</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-envelope"></i> Contact</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-only"><i class="bi bi-question-square"></i> Ask a
+                        question</a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-info-circle"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-person"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="block text-blue-500 mb-2 tablet-icon"><i class="bi bi-question-square"></i></a>
+                </div>
+                <div class="hidden sm:flex space-x-4">
+                    <a href="#" class="text-blue-500"><i class="bi bi-house"></i> Home</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-newspaper"></i> News Feed</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-question-circle"></i> Answer</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-people"></i> Spaces</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-info-circle"></i> About</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-person"></i> Account</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-envelope"></i> Contact</a>
+                    <a href="#" class="text-blue-500"><i class="bi bi-question-square"></i> Ask a question</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4 bg-white shadow p-4 mb-4 md:mb-0">
+            <h2 class="font-bold mb-4">Answer</h2>
+            <ul>
+                <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-question-circle"></i> Questions for
+                        you</a></li>
+                <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-envelope"></i> Answer requests</a>
+                </li>
+                <li class="mb-2"><a href="#" class="text-blue-500"><i class="bi bi-file-earmark-text"></i> Drafts</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Questions Section -->
+        <main class="w-full md:w-3/4 md:ml-4">
+            <div class="bg-white shadow p-4 mb-4">
+                <h2 class="font-bold mb-4">Questions for you</h2>
+                <div class="mb-4">
+                    <p class="mb-2">Is there a possibility of AI developing consciousness?</p>
+                    <button
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">Can consciousness create things?</p>
+                    <button
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">Do you doubt your reasoning, often, or not very often?</p>
+                    <button
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">How does that affect our consciousness?</p>
+                    <button
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+                </div>
+                <div class="mb-4">
+                    <p class="mb-2">Can you change others to be like you?</p>
+                    <button
+                        class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+                </div>
+            </div>
+
+            <!-- Add Topics Section -->
+            <div class="bg-white shadow p-4">
+                <h2 class="font-bold mb-4">Add 5 topics you know about</h2>
+                <p class="mb-4">Adding more specific topics will yield better questions.</p>
+                <button
+                    class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Answer</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('left-hamburger').addEventListener('click', function () {
+            document.getElementById('left-dropdown').classList.toggle('show');
+        });
+        document.getElementById('right-hamburger').addEventListener('click', function () {
+            document.getElementById('right-dropdown').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
