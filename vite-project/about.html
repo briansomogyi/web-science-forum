@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+    </style>
+    <script type="module" src="./main.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex flex-wrap justify-between items-center">
+            <h1 class="text-2xl font-bold hidden lg:block">Our Project</h1>
+            <nav class="flex flex-wrap items-center w-full lg:w-auto">
+                <div class="flex w-full sm:hidden items-center">
+                    <button id="left-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+                    <input type="text" placeholder="Search..." class="border p-2 rounded flex-grow mx-2">
+                    <button id="right-hamburger" class="sm:hidden"><i class="bi bi-list"></i></button>
+                </div>
+                <div id="left-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+                    <a href="./index.html" class="block text-blue-500 mb-2"><i class="bi bi-house"></i> Home</a>
+                    <a href="./news-feed.html" class="block text-blue-500 mb-2"><i class="bi bi-newspaper"></i> News
+                        Feed</a>
+                    <a href="./answer.html" class="block text-blue-500 mb-2"><i class="bi bi-question-circle"></i>
+                        Answer</a>
+                    <a href="./spaces.html" class="block text-blue-500 mb-2"><i class="bi bi-people"></i> Spaces</a>
+                </div>
+                <div id="right-dropdown" class="dropdown-content sm:hidden w-full bg-white shadow p-4 mt-2">
+                    <a href="./about.html" class="block text-blue-500 mb-2"><i class="bi bi-info-circle"></i> About</a>
+                    <a href="./account.html" class="block text-blue-500 mb-2"><i class="bi bi-person"></i> Account</a>
+                    <a href="./contact.html" class="block text-blue-500 mb-2"><i class="bi bi-envelope"></i> Contact</a>
+                    <a href="./ask-a-question.html" class="block text-blue-500 mb-2"><i
+                            class="bi bi-question-square"></i> Ask a
+                        question</a>
+                </div>
+                <div class="hidden sm:flex space-x-4">
+                    <a href="./index.html" class="text-blue-500"><i class="bi bi-house"></i> Home</a>
+                    <a href="./news-feed.html" class="text-blue-500"><i class="bi bi-newspaper"></i> News Feed</a>
+                    <a href="./answer.html" class="text-blue-500"><i class="bi bi-question-circle"></i> Answer</a>
+                    <a href="./spaces.html" class="text-blue-500"><i class="bi bi-people"></i> Spaces</a>
+                    <a href="./about.html" class="text-blue-500"><i class="bi bi-info-circle"></i> About</a>
+                    <a href="./account.html" class="text-blue-500"><i class="bi bi-person"></i> Account</a>
+                    <a href="./contact.html" class="text-blue-500"><i class="bi bi-envelope"></i> Contact</a>
+                    <a href="./ask-a-question.html" class="text-blue-500"><i class="bi bi-question-square"></i> Ask a
+                        question</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Why does this project exist?</h2>
+            <p class="bg-white p-4 rounded shadow">
+                <i class="bi bi-question-circle-fill text-blue-500"></i>
+                Our project exists to address the growing need for a platform where individuals can share knowledge, ask
+                questions, and tell their stories. We believe in the power of community and the importance of accessible
+                information.
+            </p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">What questions should be asked?</h2>
+            <p class="bg-white p-4 rounded shadow">
+                <i class="bi bi-chat-dots-fill text-blue-500"></i>
+                The questions that should be asked are those that spark curiosity, drive innovation, and foster
+                understanding. We encourage our users to ask questions that challenge the status quo and lead to
+                meaningful discussions.
+            </p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">What stories should be told?</h2>
+            <p class="bg-white p-4 rounded shadow">
+                <i class="bi bi-book-fill text-blue-500"></i>
+                The stories that should be told are those that inspire, educate, and connect us. We aim to provide a
+                platform where diverse voices can be heard and where personal experiences can be shared to build a more
+                inclusive community.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p class="text-gray-600">&copy; 2023 Our Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('left-hamburger').addEventListener('click', function () {
+            document.getElementById('left-dropdown').classList.toggle('show');
+        });
+        document.getElementById('right-hamburger').addEventListener('click', function () {
+            document.getElementById('right-dropdown').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
